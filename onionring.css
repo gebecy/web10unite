@@ -1,0 +1,92 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #web1_0 with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+#web1_0 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px; /* creates some space around the widget */
+}
+
+#web1_0 table {
+  display: inline-block; /* ← 横並びの核心 */
+  vertical-align: middle;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-family: "MS UI Gothic", "ＭＳ ゴシック", monospace;
+  font-size: 14px;
+
+  background: #c0c0c0;
+  border: 3px ridge #fff;
+  height: 45px;
+  margin: 2px;
+}
+#web1_0 .webring-prev a {
+  text-align: center;
+}
+#web1_0 .webring-next a {
+  text-align: center;
+}
+#web1_0 .webring-prev a,
+#web1_0 .webring-next a {
+  display: table-cell;
+  width: 26px;
+  height: 35px;
+  background: #e0e0e0;
+  border: 2px outset #fff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#web1_0 .webring-prev a:active,
+#web1_0 .webring-next a:active {
+  border: 2px inset #fff;
+}
+
+#web1_0 .webring-info {
+  padding: 0 10px;
+  background: #dcdcdc;
+  line-height: 1.3;
+}
+
+#web1_0 .webring-links a {
+  color: blue;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0 3px;
+}
+
+#web1_0 .webring-links a:hover {
+  color: red;
+}
+
+#web1_0 .webring-info {
+  letter-spacing: 0.5px;
+}
+#web1_0.dark table {
+  background: #111;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+}
+
+#web1_0.dark .webring-info {
+  background: #000;
+}
+
+#web1_0.dark .webring-prev a,
+#web1_0.dark .webring-next a {
+  background: #001100;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+#web1_0.dark .webring-links a {
+  color: rgb(0, 255, 255);
+}
