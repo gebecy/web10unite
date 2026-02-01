@@ -38,7 +38,7 @@ function randomSite() {
   otherSites = sites.slice(); //create a copy of the sites list
   otherSites.splice(thisIndex, 1); //remove the current site so we don't just land on it again
   randomIndex = Math.floor(Math.random() * otherSites.length);
-  location.href = otherSites[randomIndex];
+  location.href = otherSites[randomIndex].url;
 }
 
 //if we didn't find the site in the list, the widget displays a warning instead
@@ -63,7 +63,7 @@ if (thisIndex == null) {
   indexText = "";
   //if you've chosen to include an index, this builds the link to that
   if (useIndex) {
-    indexText = `<a href='${indexPage}'>ﾘｽﾄ</a> `;
+    indexText = `<a href='${indexPage}' target='_blank'>ﾘｽﾄ</a> `;
   }
 
   randomText = "";
@@ -78,12 +78,12 @@ if (thisIndex == null) {
     `
   <table>
     <tr>
-      <td class='webring-prev'><a href='${sites[previousIndex]}'>&lt;</a></td>
-      <td class='webring-info'>${ringName}</br>
+      <td class='webring-prev'><a href='${sites[previousIndex].url}'>&lt;</a></td>
+      <td class='webring-info'><a href='https://gebecy.github.io/web10unite/index.html' class='ringName'>${ringName}</a></br>
       <span class='webring-links'>
         ${randomText}
         ${indexText}</span></td>
-      <td class='webring-next'><a href='${sites[nextIndex]}'>&gt;</a></td>
+      <td class='webring-next'><a href='${sites[nextIndex].url}'>&gt;</a></td>
     </tr>
   </table>
   `,

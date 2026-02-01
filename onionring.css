@@ -44,7 +44,10 @@
   font-weight: bold;
   vertical-align: middle;
 }
-
+#web1_0 .ringName {
+  font-size: 14px;
+  text-decoration: none;
+}
 #web1_0 .webring-prev a:active,
 #web1_0 .webring-next a:active {
   border: 2px inset #fff;
@@ -89,4 +92,7 @@
 }
 #web1_0.dark .webring-links a {
   color: rgb(0, 255, 255);
+}
+#web1_0.dark .ringName {
+  color: #00ff00;
 }
