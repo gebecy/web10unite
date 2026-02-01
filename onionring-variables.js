@@ -7,7 +7,7 @@
 
 //the full URLs of all the sites in the ring
 var sites = [
-  "http://127.0.0.1:5500/test/web1_0/index.html",
+  "https://gebecy.github.io/web10unite/",
   "https://higashibatown.web.fc2.com/index.html",
 ];
 
