@@ -79,7 +79,7 @@ if (thisIndex == null) {
   <table>
     <tr>
       <td class='webring-prev'><a href='${sites[previousIndex].url}'>&lt;</a></td>
-      <td class='webring-info'><a href='https://gebecy.github.io/web10unite/index.html' class='ringName'>${ringName}</a></br>
+      <td class='webring-info'><a href='https://gebecy.github.io/web10unite/index.html' class='ringName' target='_blank'>${ringName}</a></br>
       <span class='webring-links'>
         ${randomText}
         ${indexText}</span></td>
