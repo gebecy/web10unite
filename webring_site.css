@@ -5,7 +5,7 @@ body {
   color: #000;
 }
 p {
-  line-height: 1.15em;
+  line-height: 1.75em;
 }
 .wrapper {
   max-width: 1000px;
@@ -36,7 +36,7 @@ header h1 {
 }
 
 .blink {
-  animation: blink 1s steps(2, start) infinite;
+  animation: blink 1.5s steps(2, start) infinite;
 }
 @keyframes blink {
   to {
@@ -53,14 +53,14 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
 }
 
 nav li {
   margin-bottom: 6px;
 }
 
-nav a {
+nav ul a {
   display: block;
   background: #c0c0ff;
   padding: 6px;
@@ -70,7 +70,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav ul a:hover {
   background: yellow;
 }
 
@@ -152,4 +152,11 @@ pre code {
   border: none;
   padding: 0;
   color: inherit;
+}
+.members {
+  border: 2px ridge #c0c0c0;
+}
+.members th,
+.members td {
+  border: 2px ridge #ffffff; /* セルの枠線は太さ1ピクセル */
 }

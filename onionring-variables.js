@@ -7,8 +7,18 @@
 
 //the full URLs of all the sites in the ring
 var sites = [
-  "https://gebecy.github.io/web10unite/",
-  "https://higashibatown.web.fc2.com/index.html",
+  {
+    name: "Web1.0同盟",
+    url: "https://gebecy.github.io/web10unite/index.html",
+    nsfw: false,
+    img: "",
+  },
+  {
+    name: "Kyommkin",
+    url: "https://higashibatown.web.fc2.com/",
+    nsfw: false,
+    img: "https://higashibatown.web.fc2.com/banner.png",
+  },
 ];
 
 //the name of the ring
@@ -22,7 +32,7 @@ var ringID = "web1_0";
 //should the widget include a link to an index page?
 var useIndex = true;
 //the full URL of the index page. if you're not using one, you don't have to specify anything here
-var indexPage = "http://127.0.0.1:5500/test/web1_0/members.html";
+var indexPage = "https://gebecy.github.io/web10unite/members.html";
 
 //should the widget include a random button?
 var useRandom = true;

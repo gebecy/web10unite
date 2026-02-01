@@ -10,14 +10,29 @@ var tag = document.getElementById(ringID); //find the widget on the page
 thisSite = window.location.href; //get the url of the site we're currently on
 thisIndex = null;
 
-// go through the site list to see if this site is on it and find its position
-for (i = 0; i < sites.length; i++) {
-  if (thisSite.startsWith(sites[i])) {
-    //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
-    thisIndex = i;
-    break; //when we've found the site, we don't need to search any more, so stop the loop
+// URL正規化
+function getDomain(url) {
+  return normalizeUrl(url).split("/")[0];
+}
+try {
+  var thisDomain = getDomain(thisSite);
+  for (var i = 0; i < sites.length; i++) {
+    var siteDomain = getDomain(sites[i].url);
+    if (thisDomain === siteDomain) {
+      thisIndex = i;
+      break;
+    }
+  }
+} catch (e) {
+  for (i = 0; i < sites.length; i++) {
+    if (thisSite.startsWith(sites[i].url)) {
+      //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
+      thisIndex = i;
+      break; //when we've found the site, we don't need to search any more, so stop the loop
+    }
   }
 }
+console.log(thisIndex);
 
 function randomSite() {
   otherSites = sites.slice(); //create a copy of the sites list

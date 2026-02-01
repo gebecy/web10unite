@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web 1.0 同盟</title>
     <link rel="stylesheet" href="webring_site.css" />
-    <link rel="stylesheet" href="onionring.css" />
+    <link rel="stylesheet" href="https://gebecy.github.io/web10unite/onionring.css" />
   </head>
 
   <body>
+    <script src="//accaii.com/web10union/script.js" async></script><noscript><img src="//accaii.com/web10union/script?guid=on"></noscript>
     <div class="wrapper">
       <header>
         <h1>Web 1.0 同盟</h1>
-        <div class="blink">古のインターネット</div>
+        <div class="blink">ネオレトロからレトロまで、昔のインターネットっぽいものが好きな人のための同盟</div>
       </header>
 
       <div class="layout">
@@ -27,18 +28,19 @@
           <hr />
 
           あなたは<br />
-          <span class="counter">000123</span><br />
+          <div id="accaiiCounter"></div>
           人目の訪問者です
         </nav>
 
         <main class="box">
           <h2>🌐 参加の流れ</h2>
           <p>
-            1. コードを自分のサイトの好きな場所に貼り付けます<br />
-            2. フォームに情報を記入して送信します<br />
+            1. <a href="#banner_code">バナーコード</a>を自分のサイトの好きな場所に貼り付けます<br />
+            2. <a href="https://forms.gle/tgE4uQcDiCBCKawA8" target="_blank">フォーム</a>に情報を記入して送信します<br />
             3. 登録されるとバナーが表示されます<br />
           </p>
-          <h3>🌐 コード（ブラック）</h3>
+          <hr>
+          <h3 id ="banner_code">🌐 バナーコード（ブラック）</h3>
           <div id="web1_0" class="dark">
             <table>
               <tbody>
@@ -61,18 +63,20 @@
             </table>
           </div>
           <p>
-            フォームを送信後、以下のコードをウェブページのhtmlに貼り付けてください<br />
-            <pre><code>&lt;div id=&quot;web1_0&quot; class=&quot;dark&quot;&gt;
+            フォームを送信後、サイトのhtmlファイルに以下のコードをに貼り付けてください<br />
+            <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://gebecy.github.io/web10unite/onionring.css&quot; /&gt;
+          &lt;!-- 上記はバナーを設置するページのheaderタグの中に貼り付けます --&gt;
+
+          &lt;!-- 以下はバナーです。サイトの好きな部分に貼ります --&gt;
+&lt;div id=&quot;web1_0&quot; class=&quot;dark&quot;&gt;
               &lt;script type=&quot;text/javascript&quot;
-              src=&quot;onionring-variables.js&quot; &gt;&lt;/script&gt;
+              src=&quot;https://gebecy.github.io/web10unite/onionring-variables.js&quot; &gt;&lt;/script&gt;
               &lt;script type=&quot;text/javascript&quot;
-              src=&quot;onionring-widget.js&quot;&gt;&lt;/script&gt;
-              &lt;/div&gt; </code
-            >
-            </pre>
+              src=&quot;https://gebecy.github.io/web10unite/onionring-widget.js&quot;&gt;&lt;/script&gt;
+              &lt;/div&gt; </code></pre>
             フォームに登録した情報が登録されると、バナーが表示されます。<br />
           </p>
-          <h3>🌐 コード（ホワイト）</h3>
+          <h3>🌐 バナーコード（ホワイト）</h3>
           <div id="web1_0">
             <table>
               <tbody>
@@ -96,9 +100,23 @@
           </div>
           <p>
             フォームを送信後、以下のコードをウェブページのhtmlに貼り付けてください<br />
-            <code> testtesttest testtesttest > </code><br />
+                        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://gebecy.github.io/web10unite/onionring.css&quot; /&gt;
+          &lt;!-- 上記はバナーを設置するページのheaderタグの中に貼り付けます --&gt;
+
+          &lt;!-- 以下はバナーです。サイトの好きな部分に貼ります --&gt;
+&lt;div id=&quot;web1_0&quot;&gt;
+              &lt;script type=&quot;text/javascript&quot;
+              src=&quot;https://gebecy.github.io/web10unite/onionring-variables.js&quot; &gt;&lt;/script&gt;
+              &lt;script type=&quot;text/javascript&quot;
+              src=&quot;https://gebecy.github.io/web10unite/onionring-widget.js&quot;&gt;&lt;/script&gt;
+              &lt;/div&gt; </code></pre>
             フォームに登録した情報が登録されると、バナーが表示されます。<br />
           </p>
+          <hr>
+          <h2 id ="banner_code">🌐 フォーム</h2>
+          必ずバナーコードを貼り付けてから申請をしてください
+          <br>
+          <a href="https://forms.gle/tgE4uQcDiCBCKawA8" target="_blank">フォーム</a>
         </main>
       </div>
 

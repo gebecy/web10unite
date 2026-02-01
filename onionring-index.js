@@ -5,16 +5,24 @@
 // === ONIONRING-INDEX ===
 //this file builds the list of sites in the ring for displaying on your index page
 
-var tag = document.getElementById('index');
+var tag = document.getElementById("index");
 regex = /^https:\/\/|\/$/g; //strips the https:// and trailing slash off the urls for aesthetic purposes
-
+var nsfw = "";
 list = "";
 for (i = 0; i < sites.length; i++) {
-  list += `<li><a href='${sites[i]}'>${sites[i].replace(regex, "")}</a></li>`;
+  if (sites[i].nsfw) {
+    nsfw = "🔞";
+  } else {
+    nsfw = "";
+  }
+  list += `<tr><td><a href='${sites[i].url}'><img src="${sites[i].img}"></a></td><td>${nsfw}<a href='${sites[i].url}'>${sites[i].name.replace(regex, "")}</a></td></tr>`;
 }
 
-tag.insertAdjacentHTML('afterbegin', `
-<ul>
+tag.insertAdjacentHTML(
+  "afterbegin",
+  `
+<table class="members">
 ${list}
-</ul>
-`);
+</table>
+`,
+);
