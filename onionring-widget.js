@@ -78,18 +78,20 @@ shadow.innerHTML = `
 /* === ONIONRING.CSS === */
 /* this file affects the style of the widget. remember to replace all instances of #web1_0 with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
 
-:host {
+:host{
   display: inline-block;
   margin: 0 auto;
-  padding: 3px;
+  padding: 3px; /* creates some space around the widget */
 }
 
 table {
-  display: inline-block;
+  display: inline-block; /* ← 横並びの核心 */
+  vertical-align: middle;
+
   border-collapse: collapse;
   border-spacing: 0;
 
-  font-family: "MS UI Gothic", monospace;
+  font-family: "MS UI Gothic", "ＭＳ ゴシック", monospace;
   font-size: 14px;
 
   background: #c0c0c0;
@@ -97,7 +99,12 @@ table {
   height: 45px;
   margin: 2px;
 }
-
+.webring-prev a {
+  text-align: center;
+}
+.webring-next a {
+  text-align: center;
+}
 .webring-prev a,
 .webring-next a {
   display: table-cell;
@@ -108,35 +115,39 @@ table {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  text-align: center;
   vertical-align: middle;
 }
-
 .ringName {
   font-size: 14px;
-  color: #000;
   text-decoration: none;
+  color: #000;
+}
+.webring-prev a:active,
+.webring-next a:active {
+  border: 2px inset #fff;
 }
 
 .webring-info {
   padding: 0 10px;
   background: #dcdcdc;
   line-height: 1.3;
-  letter-spacing: 0.5px;
 }
 
 .webring-links a {
   color: blue;
+  text-decoration: none;
   font-size: 11px;
   font-weight: bold;
   margin: 0 3px;
-  text-decoration: none;
 }
 
 .webring-links a:hover {
   color: red;
 }
 
+.webring-info {
+  letter-spacing: 0.5px;
+}
 :host(.dark) table {
   background: #111;
   border: 2px solid #00ff00;
@@ -147,6 +158,18 @@ table {
   background: #000;
 }
 
+:host(.dark) .webring-prev a,
+:host(.dark) .webring-next a {
+  background: #001100;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+:host(.dark) .webring-links a {
+  color: rgb(0, 255, 255);
+}
+:host(.dark) .ringName {
+  color: #00ff00;
+}
 </style>
 
 ${html}
