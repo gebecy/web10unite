@@ -78,20 +78,18 @@ shadow.innerHTML = `
 /* === ONIONRING.CSS === */
 /* this file affects the style of the widget. remember to replace all instances of #web1_0 with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
 
-#web1_0 {
+:host {
   display: inline-block;
   margin: 0 auto;
-  padding: 3px; /* creates some space around the widget */
+  padding: 3px;
 }
 
-#web1_0 table {
-  display: inline-block; /* ← 横並びの核心 */
-  vertical-align: middle;
-
+table {
+  display: inline-block;
   border-collapse: collapse;
   border-spacing: 0;
 
-  font-family: "MS UI Gothic", "ＭＳ ゴシック", monospace;
+  font-family: "MS UI Gothic", monospace;
   font-size: 14px;
 
   background: #c0c0c0;
@@ -99,14 +97,9 @@ shadow.innerHTML = `
   height: 45px;
   margin: 2px;
 }
-#web1_0 .webring-prev a {
-  text-align: center;
-}
-#web1_0 .webring-next a {
-  text-align: center;
-}
-#web1_0 .webring-prev a,
-#web1_0 .webring-next a {
+
+.webring-prev a,
+.webring-next a {
   display: table-cell;
   width: 26px;
   height: 35px;
@@ -115,61 +108,45 @@ shadow.innerHTML = `
   color: black;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
   vertical-align: middle;
 }
-#web1_0 .ringName {
+
+.ringName {
   font-size: 14px;
-  text-decoration: none;
   color: #000;
-}
-#web1_0 .webring-prev a:active,
-#web1_0 .webring-next a:active {
-  border: 2px inset #fff;
+  text-decoration: none;
 }
 
-#web1_0 .webring-info {
+.webring-info {
   padding: 0 10px;
   background: #dcdcdc;
   line-height: 1.3;
+  letter-spacing: 0.5px;
 }
 
-#web1_0 .webring-links a {
+.webring-links a {
   color: blue;
-  text-decoration: none;
   font-size: 11px;
   font-weight: bold;
   margin: 0 3px;
+  text-decoration: none;
 }
 
-#web1_0 .webring-links a:hover {
+.webring-links a:hover {
   color: red;
 }
 
-#web1_0 .webring-info {
-  letter-spacing: 0.5px;
-}
-#web1_0.dark table {
+:host(.dark) table {
   background: #111;
   border: 2px solid #00ff00;
   color: #00ff00;
 }
 
-#web1_0.dark .webring-info {
+:host(.dark) .webring-info {
   background: #000;
 }
 
-#web1_0.dark .webring-prev a,
-#web1_0.dark .webring-next a {
-  background: #001100;
-  border: 1px solid #00ff00;
-  color: #00ff00;
-}
-#web1_0.dark .webring-links a {
-  color: rgb(0, 255, 255);
-}
-#web1_0.dark .ringName {
-  color: #00ff00;
-}
 </style>
 
 ${html}
