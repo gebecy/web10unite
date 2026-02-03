@@ -19,6 +19,18 @@ var sites = [
     nsfw: false,
     img: "https://higashibatown.web.fc2.com/banner.png",
   },
+  {
+    name: "Future Grave",
+    url: "https://mablespace.yakiuchi.com/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/fg_banner.gif",
+  },
+  {
+    name: "エのめくん",
+    url: "http://enomeeee.blog.fc2.com/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/enobnr.png",
+  },
 ];
 
 //the name of the ring
