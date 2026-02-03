@@ -15,7 +15,7 @@ for (i = 0; i < sites.length; i++) {
   } else {
     nsfw = "";
   }
-  list += `<tr><td><a href='${sites[i].url}'><img src="${sites[i].img}"></a></td><td>${nsfw}<a href='${sites[i].url}'>${sites[i].name.replace(regex, "")}</a></td></tr>`;
+  list += `<tr><td><a href='${sites[i].url}' target = '_blank'><img src="${sites[i].img}"></a></td><td>${nsfw}<a href='${sites[i].url}' target = '_blank'>${sites[i].name.replace(regex, "")}</a></td></tr>`;
 }
 
 tag.insertAdjacentHTML(
