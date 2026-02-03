@@ -19,16 +19,25 @@ thisIndex = null;
 function getDomain(url) {
   return normalizeUrl(url).split("/")[0];
 }
-
 try {
   var thisDomain = getDomain(thisSite);
   for (var i = 0; i < sites.length; i++) {
-    if (thisDomain === getDomain(sites[i].url)) {
+    var siteDomain = getDomain(sites[i].url);
+    if (thisDomain === siteDomain) {
       thisIndex = i;
       break;
     }
   }
-} catch (e) {}
+} catch (e) {
+  for (i = 0; i < sites.length; i++) {
+    if (thisSite.startsWith(sites[i].url)) {
+      //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
+      thisIndex = i;
+      break; //when we've found the site, we don't need to search any more, so stop the loop
+    }
+  }
+}
+console.log(thisIndex);
 
 let html = "";
 
