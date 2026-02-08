@@ -11,7 +11,7 @@ var sites = [
     name: "Web1.0同盟",
     url: "https://gebecy.github.io/web10unite/index.html",
     nsfw: false,
-    img: "",
+    img: "https://gebecy.github.io/web10unite/img/web10banner.webp",
   },
   {
     name: "Kyommkin",
