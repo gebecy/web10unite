@@ -31,6 +31,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/enobnr.png",
   },
+  {
+    name: "ドギマギふんたぢ～",
+    url: "https://nohona.verse.jp/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/bana.png",
+  },
 ];
 
 //the name of the ring
