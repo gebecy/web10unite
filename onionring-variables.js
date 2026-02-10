@@ -38,10 +38,10 @@ var sites = [
     img: "https://gebecy.github.io/web10unite/img/bana.png",
   },
   {
-    name: "ドギマギふんたぢ～",
+    name: "Alioth Note",
     url: "https://aliothnote.com",
     nsfw: false,
-    img: "aliothnote.com/img/noteb.png",
+    img: "https://aliothnote.com/img/noteb.png",
   },
 ];
 
