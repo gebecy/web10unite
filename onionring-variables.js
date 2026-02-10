@@ -37,6 +37,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/bana.png",
   },
+  {
+    name: "ドギマギふんたぢ～",
+    url: "https://aliothnote.com",
+    nsfw: false,
+    img: "aliothnote.com/img/noteb.png",
+  },
 ];
 
 //the name of the ring
