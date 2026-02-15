@@ -88,9 +88,12 @@ shadow.innerHTML = `
 /* this file affects the style of the widget. remember to replace all instances of #web1_0 with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
 
 :host{
+  all: initial;
   display: inline-block;
+  font-family: "MS UI Gothic", "ＭＳ ゴシック", monospace;
   margin: 0 auto;
-  padding: 3px; /* creates some space around the widget */
+  font-size: 14px;
+  padding: 3px; 
 }
 
 table {
