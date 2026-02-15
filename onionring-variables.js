@@ -43,6 +43,12 @@ var sites = [
     nsfw: false,
     img: "https://aliothnote.com/img/noteb.png",
   },
+  {
+    name: "無病息災",
+    url: "https://goodlife19.netlify.app/",
+    nsfw: false,
+    img: "https://hstorage.io/dl/20241208231804_396a78514974.png",
+  },
 ];
 
 //the name of the ring
