@@ -44,10 +44,10 @@ var sites = [
     img: "https://aliothnote.com/img/noteb.png",
   },
   {
-    name: "無病息災",
-    url: "https://goodlife19.netlify.app/",
+    name: "大山崎すとりぃむ",
+    url: "https://koitsu100dora.net/index.htm",
     nsfw: false,
-    img: "https://hstorage.io/dl/20241208231804_396a78514974.png",
+    img: "https://koitsu100dora.net/images/banner/bnr015.png",
   },
 ];
 
