@@ -47,7 +47,7 @@ var sites = [
     name: "ふわふわ",
     url: "https://con.jp/",
     nsfw: false,
-    img: "https://koitsu100dora.net/images/banner/banner_l.png",
+    img: "https://gebecy.github.io/web10unite/img/banner_l.png",
   },
   {
     name: "大山崎すとりぃむ",
