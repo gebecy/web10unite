@@ -39,13 +39,19 @@ var sites = [
   },
   {
     name: "Alioth Note",
-    url: "https://aliothnote.com",
+    url: "https://aliothnote.com/",
     nsfw: false,
     img: "https://aliothnote.com/img/noteb.png",
   },
   {
+    name: "ふわふわ",
+    url: "https://con.jp/",
+    nsfw: false,
+    img: "https://koitsu100dora.net/images/banner/banner_l.png",
+  },
+  {
     name: "大山崎すとりぃむ",
-    url: "https://koitsu100dora.net/index.htm",
+    url: "https://koitsu100dora.net/",
     nsfw: false,
     img: "https://koitsu100dora.net/images/banner/bnr015.png",
   },

@@ -11,16 +11,27 @@ const shadow = tag.attachShadow({ mode: "open" });
 thisSite = window.location.href;
 thisIndex = null;
 
-/* ======================
-   ここは普通のJS処理
-====================== */
+console.log("thisSite:", thisSite);
 
-// URL正規化
+function normalizeUrl(url) {
+  try {
+    var u = new URL(url, window.location.origin);
+    return u.hostname.replace(/^www\./, "");
+  } catch (e) {
+    console.error("URL parse error:", url);
+    return null;
+  }
+}
 function getDomain(url) {
   return normalizeUrl(url).split("/")[0];
 }
 try {
+  function getDomain(url) {
+    return normalizeUrl(url);
+  }
+
   var thisDomain = getDomain(thisSite);
+  console.log("normalized thisDomain:", thisDomain);
   for (var i = 0; i < sites.length; i++) {
     var siteDomain = getDomain(sites[i].url);
     if (thisDomain === siteDomain) {
