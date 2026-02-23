@@ -44,6 +44,12 @@ var sites = [
     img: "https://aliothnote.com/img/noteb.png",
   },
   {
+    name: "無病息災",
+    url: "https://goodlife19.netlify.app/",
+    nsfw: false,
+    img: "https://hstorage.io/dl/20241208231804_396a78514974.png",
+  },
+  {
     name: "ふわふわ",
     url: "https://con.jp/",
     nsfw: false,
