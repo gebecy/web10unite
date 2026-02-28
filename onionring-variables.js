@@ -61,6 +61,12 @@ var sites = [
     nsfw: false,
     img: "https://koitsu100dora.net/images/banner/bnr015.png",
   },
+  {
+    name: "lycolia.info",
+    url: "https://lycolia.info/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/site-banner.png",
+  },
 ];
 
 //the name of the ring
