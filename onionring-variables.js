@@ -67,6 +67,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/site-banner.png",
   },
+  {
+    name: "こうちゃん50da4のWebサイト",
+    url: "https://kouchan50da4.f5.si/",
+    nsfw: false,
+    img: "https://kouchan50da4.f5.si/images/mini_banner2.png",
+  },
 ];
 
 //the name of the ring
