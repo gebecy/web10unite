@@ -160,3 +160,7 @@ pre code {
 .members td {
   border: 2px ridge #ffffff; /* セルの枠線は太さ1ピクセル */
 }
+.members img {
+  max-width: 200px;
+  height: auto;
+}
