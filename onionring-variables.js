@@ -73,6 +73,12 @@ var sites = [
     nsfw: false,
     img: "https://kouchan50da4.f5.si/images/mini_banner2.png",
   },
+  {
+    name: "佐倉葉ウェブ文化研究室",
+    url: "https://websitemap.sakura.ne.jp/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/sakuraba_banner.gif",
+  },
 ];
 
 //the name of the ring
