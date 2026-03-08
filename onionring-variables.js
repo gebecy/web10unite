@@ -79,6 +79,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/sakuraba_banner.gif",
   },
+  {
+    name: "NIITOU's ホームページ",
+    url: "https://ss1.xrea.com/niitouakuta.s205.xrea.com/index.html",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/niitou_200x40.png",
+  },
 ];
 
 //the name of the ring
