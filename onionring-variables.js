@@ -85,6 +85,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/niitou_200x40.png",
   },
+  {
+    name: "I/O.mes",
+    url: "https://cbl.rgr.jp/",
+    nsfw: true,
+    img: "https://cbl.rgr.jp/banner.png",
+  },
 ];
 
 //the name of the ring
