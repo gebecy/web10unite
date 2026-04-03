@@ -91,6 +91,12 @@ var sites = [
     nsfw: true,
     img: "https://cbl.rgr.jp/banner.png",
   },
+  {
+    name: "帷",
+    url: "https://tobarizzz.blogspot.com/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/banner4.png",
+  },
 ];
 
 //the name of the ring
