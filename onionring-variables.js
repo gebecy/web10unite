@@ -92,12 +92,6 @@ var sites = [
     img: "https://cbl.rgr.jp/banner.png",
   },
   {
-    name: "帷",
-    url: "https://tobarizzz.blogspot.com/",
-    nsfw: false,
-    img: "https://gebecy.github.io/web10unite/img/banner4.png",
-  },
-  {
     name: "星屑べーかりー",
     url: "https://stardustbakery.jp/",
     nsfw: false,
