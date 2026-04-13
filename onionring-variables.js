@@ -98,7 +98,7 @@ var sites = [
     img: "https://gebecy.github.io/web10unite/img/banner-1-20040.png",
   },
   {
-    name: "星屑べーかりー",
+    name: "ジョンノート",
     url: "https://johnnote.skr.jp/",
     nsfw: false,
     img: "https://johnnote.skr.jp/img/banner001.png",
