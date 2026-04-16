@@ -103,6 +103,12 @@ var sites = [
     nsfw: false,
     img: "https://johnnote.skr.jp/img/banner001.png",
   },
+  {
+    name: "uga.dev",
+    url: "https://uga.dev",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/nobanner.webp",
+  },
 ];
 
 //the name of the ring
