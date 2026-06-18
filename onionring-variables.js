@@ -109,6 +109,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/nobanner.webp",
   },
+  {
+    name: "Umaneko Toon Lab",
+    url: "https://drumanekotoonlab.monster/",
+    nsfw: false,
+    img: "https://gebecy.github.io/web10unite/img/banner3.png",
+  },
 ];
 
 //the name of the ring
