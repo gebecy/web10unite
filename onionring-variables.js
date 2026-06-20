@@ -115,6 +115,12 @@ var sites = [
     nsfw: false,
     img: "https://gebecy.github.io/web10unite/img/banner3.png",
   },
+  {
+    name: "NOMORE",
+    url: "https://nomore.web.fc2.com/",
+    nsfw: false,
+    img: "https://nomore.web.fc2.com/banner.png",
+  },
 ];
 
 //the name of the ring
