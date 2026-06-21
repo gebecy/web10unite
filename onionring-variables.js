@@ -121,6 +121,12 @@ var sites = [
     nsfw: false,
     img: "https://nomore.web.fc2.com/banner.png",
   },
+  {
+    name: "Neo's World",
+    url: "https://neos21.net/",
+    nsfw: false,
+    img: "https://neos21.net/about/banner-200x40-01.png",
+  },
 ];
 
 //the name of the ring
